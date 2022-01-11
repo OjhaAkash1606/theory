@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>React Theory</title>
+  </head>
+
+  <body style="background-color: aliceblue">
+    <ul style="list-style-type: circle; font-size: 25px">
+      <li>
+        What is React js?
+        <ol>
+          <li>
+            React is a library of javascript.
+            <ul style="list-style-type: circle">
+              <li>
+                Differences between library and framworks.
+                <ol>
+                  <li>
+                    In library function or code is invoked by programmers but in
+                    framework function or code is invoked by itself.
+                  </li>
+                  <li>
+                    Library is not a software but framework is a software.
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+
+      <li>
+        Why learn react?
+        <ol>
+          <li>
+            React builds UI(user interface) as fast as possible because it uses
+            virtual dom at place of real dom each time.
+          </li>
+          <li>React is used to single page application.</li>
+          <li>
+            React is a long term product because it is maintained by facebook.
+          </li>
+          <li>ReactJS allows us to create reusable UI components.</li>
+          <li>Large community for your support.</li>
+          <li>Mobile app devlopment with react-native.</li>
+        </ol>
+      </li>
+
+      <li>
+        What is class and function component?
+        <ol>
+          <li>
+            Class Component
+            <ul style="list-style-type: circle">
+              <li>We can not used hooks in Class Component.</li>
+            </ul>
+          </li>
+        </ol>
+        <ol>
+          <li>
+            Function Component
+            <ul style="list-style-type: circle">
+              <li></li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+      <br />
+      <li>JSX stands for JavaScript XML.</li>
+      <li>JSX allows us to write HTML in React(also in JS).</li>
+      <li>JSX makes it easier to write and add HTML in React.</li>
+      <li>
+        JSX allows us to write HTML elements in JavaScript and place them in the
+        DOM without any createElement()
+        <br />
+        and/or appendChild() methods.
+      </li>
+      <li>JSX converts HTML tags into react elements.</li>
+      <li>
+        Inserting a Large Block of HTML <br />
+        To write HTML on multiple lines, put the HTML inside parentheseslike
+        this().
+      </li>
+      <li>
+        JSX follows XML rules, and therefore HTML elements must be properly
+        closed. <br />
+        JSX will throw an error if the HTML is not properly closed.<br />
+        Close empty elements with />
+      </li>
+      <li>
+        The HTML code must be wrapped in ONE top level element. <br />
+        So if you like to write two headers, you must put them inside a parent
+        element, like a div element <br />
+        JSX will throw an error if the HTML is not correct, or if the HTML
+        misses a parent element.
+      </li>
+      <br />
+      <li>State is Public or private in react?</li>
+      <br />
+      <li>state can be used out side of component in react or not ?</li>
+      <br />
+      <li>
+        How many methods or phases in react?
+
+        <ul>
+          <br />
+          <li>
+            There are 3 phases in React.
+            <ol>
+              <li>Mounting</li>
+              <li>Updating</li>
+              <li>Unmounting</li>
+            </ol>
+          </li>
+          <br />
+          <li>
+            There are 16 methods in React.
+            <ol>
+              <li>Constructor life cycle method</li>
+              <li>
+                Render life cycle method
+                <ol>
+                  <li>
+                    We should never update setState in Render life cycle method
+                  </li>
+                </ol>
+              </li>
+              <li>
+                ComponentDidMount life cycle method
+                <ol>
+                  <li>
+                    props and state are not effect on this life cycle method
+                  </li>
+                  <li>Here we can call API mostlly</li>
+                </ol>
+              </li>
+              <li>
+                componentDidUpdate life cycle method
+                <ol>
+                  <li>Here we can call API with conditionlly</li>
+                  <li>
+                    If should component update is return true then Component Did
+                    Update life cycle is called. Whenever return false then not
+                    called.
+                  </li>
+                </ol>
+              </li>
+              <li>
+                shouldComponentUpdate life cycle method
+                <ol>
+                  <li></li>
+                </ol>
+              </li>
+              <li>
+                componentWillUnmount life cycle method
+                <ol>
+                  <li>
+                    In Component Will Unmount life cycle child component must be
+                    class Component and whatever parent Component does not
+                    matter
+                  </li>
+                  <li>
+                    component Will Unmount method is called just before of
+                    component remove from dom.
+                  </li>
+                  <li>
+                    Whenever Component hide then component will unmount method
+                    called automatically.
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+        </ul>
+      </li>
+      <br />
+      <li>
+        On which time runs life cycle method in react?
+        <ol>
+          <li>When components are loaded</li>
+          <li>When component's props and state are updated</li>
+          <li>When components are removed</li>
+        </ol>
+      </li>
+      <br />
+      <li>
+        What is Hooks?
+        <ol>
+          <li>
+            Hooks gives us to access to react features like state , pure
+            component , life cycle method in functional component. which is
+            inbuilted in class component.
+          </li>
+        </ol>
+      </li>
+      <br />
+      <li>
+        useEffect.
+        <ol>
+          <li>We can use useEffect more than one in one component.</li>
+          <li>
+            useEffect is called at page page loaded and also at updatation of
+            state and props
+          </li>
+        </ol>
+      </li>
+      <br />
+      <li>
+        What is React fragments ?
+        <ul style="list-style-type: circle">
+          <li>
+            React fragments allow you to wrap multiple element without adding an
+            extra node to the dom.
+          </li>
+        </ul>
+      </li>
+      <br />
+      <li>What is lifting state up ?</li>
+      <br />
+      <li>
+        What is the pure component ?
+        <ul style="list-style-type: circle">
+          <li>
+            The components which do not re-render when the value of state and
+            props has been updated with the same value.
+          </li>
+          <li>
+            If the value of previous state or props and new state or props is
+            the same ,then pure component did not re-rendered.
+          </li>
+          <li>pure component uses only in class component.</li>
+          <li>in props parent component must be pure component. {doubt}</li>
+        </ul>
+      </li>
+      <br />
+      <li>
+        What is useMemo ?
+        <ul style="list-style-type: circle">
+          <li>
+            useMemo uses at place of pure component in function component.
+          </li>
+          <li>useMemo uses for improve performance.</li>
+        </ul>
+      </li>
+      <br />
+      <li>
+        What is Ref ?
+        <ul style="list-style-type: circle">
+          <li>
+            Refs provide a way to access DOM nodes or React elements created in
+            the render method.
+          </li>
+          <li>it is used in class component.</li>
+          <li>
+            useRef is hook and it is used in function component as like Ref .
+          </li>
+        </ul>
+      </li>
+      <br />
+      <li>
+        What is forwardRef ?
+        <ul style="list-style-type: circle">
+          <li>
+            React forwardRef is a method that allows parent components pass down
+            refs to their children.
+          </li>
+          <li>
+            Using forwardRef in React gives the child component a reference to a
+            DOM element created by its parent component.
+          </li>
+        </ul>
+      </li>
+      <br />
+      <li>
+        What is controlled component ?
+        <ul style="list-style-type: circle">
+          <li>
+            When input fields are controlled through state in react is known as
+            controlled component.
+          </li>
+        </ul>
+      </li>
+      <br />
+      <li>
+        What is Uncontrolled component ?
+        <ul>
+          <li>
+            Whenever input fields are not controlled through state in react it
+            is called uncontrolled component.
+          </li>
+        </ul>
+      </li>
+      <br />
+      <li>
+        What HOC (High order component) ?
+        <ul style="list-style-type: circle">
+          <li>
+            A higher-order component (HOC) is an advanced technique in React for
+            reusing component logic again and again.
+          </li>
+          <li>
+            A higher-order component is a function that takes a component and
+            returns a new component.
+          </li>
+        </ul>
+      </li>
+      <br />
+      <li>
+        What is routing ?
+        <ul>
+          <li>
+            Routing is a process in which user is directed to different pages
+            based on their reuest or action.
+          </li>
+          <li>
+            React router is a collection of navigational components that compose
+            declaratively with your application.
+          </li>
+        </ul>
+      </li>
+      <br />
+      <li>
+        What is API ?
+        <ul style="list-style-type: circle">
+          <li>
+            Api is a software intermediary that allows two application to talk
+            to each other.
+          </li>
+          <li>
+            API is worked as messanger that delivers your request to the
+            provider that you're requesting it from and then delivers the
+            response back to you.
+          </li>
+          <li>
+            Methods of API
+            <ul style="list-style-type: circle">
+              <li>Get method uses for call API</li>
+              <li>Post method uses for store data</li>
+              <li>Put method uses for update API</li>
+              <li>Delet method uses for delet API</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>What is postman ?</li>
+      <br />
+      <li>
+        What is Context?
+        <ul>
+          <li>
+            In React, Context provides a way to pass data without passing props
+            mannually at every level top to bottom.
+          </li>
+        </ul>
+      </li>
+      <li>
+        What is redux ?
+        <ul>
+          <li>
+            A container where you can store your whole application data and it
+            is works as a state management.
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
