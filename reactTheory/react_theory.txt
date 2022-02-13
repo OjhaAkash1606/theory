@@ -1,0 +1,42 @@
+What is React JS?
+    -React JS is a library of javascript which is developed by facebook in 2011.
+
+    -React JS follows component based approach which helps in building reusable component.
+
+    -React JS is used for developing complex and interactive web and mobile UI.
+
+
+What are the features of React JS?
+    -There are some major features of React Js like
+
+    -React JS uses virtual dom instead of Real dom.
+    -React JS uses server side rendering.
+    -React JS follows uni-directional data flow or data binding.(uni-directional means data flow parent to child)
+
+
+What are pros and cons of React JS?
+    -pros
+        -React JS improves application performance due to virtual dom.
+            (when we write a React component, we did not write directly to the DOM. Instead, we are writing virtual components that react will turn into the DOM, leading to smoother and faster performance.)
+
+        -In React improves code readibility with the help of JSX.
+            (In JSX, we can write html and javascript together.)
+
+        -React can be conveniently used on clint side as well as server side.
+
+        -React is easy to integrate with other framework like Angular etc.
+
+        -React has a power to reuse component.
+
+        -React builds single page application.
+
+    -Cons
+        -React is a library not a full-blown framework.
+            (React focused only on UI not on development so we need to choose other technology to developed a project)
+        
+        -React has poor documentation due to constantly updating technology.
+            (React technologies updating and accelerating so fast that there is no time to make proper documentation.)
+
+        
+
+
